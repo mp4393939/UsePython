@@ -1,16 +1,16 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
-import douban.html_parser
-import douban.html_outputer
-import douban.html_downloader
+import douban2018.html_parser
+import douban2018.html_outputer
+import douban2018.html_downloader
 
 
 class SpiderMain(object):
 
     def __init__(self):
-        self.parser = douban.html_parser.HtmlParser()
-        self.outputer = douban.html_outputer.HtmlOutputer()
-        self.downloader = douban.html_downloader.HtmlDownloader()
+        self.parser = douban2018.html_parser.HtmlParser()
+        self.outputer = douban2018.html_outputer.HtmlOutputer()
+        self.downloader = douban2018.html_downloader.HtmlDownloader()
 
     def craw(self, url):
         html_cnt = self.downloader.downlod(url)
