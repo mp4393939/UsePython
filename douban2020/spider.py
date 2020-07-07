@@ -12,7 +12,7 @@ def main():
     savepath = ".\\test.xls"
     # 2、解析数据
     # 3、保存数据
-    saveData(savepath)
+    #saveData(savepath)
     print("开始爬虫")
 
 
